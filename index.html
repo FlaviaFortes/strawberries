@@ -7,12 +7,11 @@ meta_keywords: strawberries, flafortes, flavia, fortes, web, ruby, rails, git, a
 
 {% assign first_post = site.posts.first %}
 
-<div id="home-last-post-holder">
+<!-- <div id="home-last-post-holder">
   <article id="home-last-post" class="wrapper">
     <h1><a href="{{ first_post.url }}" title="Post {{ first_post.title }}">{{ first_post.title }}</a></h1>
-    <p><a id="home-last-post-read" href="{{ first_post.url }}" title="Continue lendo o post {{ first_post.title }}">Ler</a></p>
   </article>
-</div>
+</div> -->
 <section id="home-posts" class="wrapper">
   {% for post in site.posts offset:1 %}
     <article>
