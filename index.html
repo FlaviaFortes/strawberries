@@ -1,13 +1,25 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Página inicial
+meta_description: Strawberries é o blog da @flafortes desenvolvimento web, Ruby, Rails, Git, Agile e muito mais!
+meta_keywords: strawberries, flafortes, flavia, fortes, web, ruby, rails, git, agile, programação
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% assign first_post = site.posts.first %}
+
+<div id="home-last-post-holder">
+  <article id="home-last-post" class="wrapper">
+    <h1><a href="{{ first_post.url }}" title="Post {{ first_post.title }}">{{ first_post.title }}</a></h1>
+    <p><a id="home-last-post-read" href="{{ first_post.url }}" title="Continue lendo o post {{ first_post.title }}">Ler</a></p>
+  </article>
 </div>
+<section id="home-posts" class="wrapper">
+  {% for post in site.posts offset:1 %}
+    <article>
+      <div class="home-post-date">
+        {{ post.date | date: '%d/%m/%Y' }}
+      </div>
+      <h1><a href="{{ post.url }}" title="Post {{ post.title }}">{{ post.title }}</a> </h1>
+    </article>
+  {% endfor %}
+</section>
