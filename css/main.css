@@ -90,6 +90,13 @@ hgroup, menu, nav, section, menu {
   color: #fff;
 }
 
+#footer-social-links a {
+  font-family: "fontello";
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
 /* =Home
  * -------------------------------------------------------------- */
 
