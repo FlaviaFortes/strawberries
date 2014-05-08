@@ -5,20 +5,19 @@ meta_description: Strawberries é o blog da @flafortes desenvolvimento web, Ruby
 meta_keywords: strawberries, flafortes, flavia, fortes, web, ruby, rails, git, agile, programação
 ---
 
-{% assign first_post = site.posts.first %}
-
-<!-- <div id="home-last-post-holder">
-  <article id="home-last-post" class="wrapper">
-    <h1><a href="{{ first_post.url }}" title="Post {{ first_post.title }}">{{ first_post.title }}</a></h1>
-  </article>
-</div> -->
-<section id="home-posts" class="wrapper">
-  {% for post in site.posts offset:1 %}
+<section id="posts-list" class="wrapper">
+  {% for post in site.posts %}
     <article>
-      <div class="home-post-date">
+      <h1 class="post-title">
+      <a href="{{ post.url }}" title="Post {{ post.title }}">{{ post.title }}</a>
+      </h1>
+      <div class="post-author"> por <a href="http://www.twitter.com/flafortes">@flafortes</a></div>
+      <div class="post-date">
         {{ post.date | date: '%d/%m/%Y' }}
       </div>
-      <h1><a href="{{ post.url }}" title="Post {{ post.title }}">{{ post.title }}</a> </h1>
+      <div class="post-content">
+        {{ post.excerpt }}
+      </div>
     </article>
   {% endfor %}
 </section>
