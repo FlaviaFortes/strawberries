@@ -95,7 +95,7 @@ hgroup, menu, nav, section, menu {
 
 
 #header figure {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 30px;
   display: inline-block;
   margin-right: 45px;
@@ -111,14 +111,14 @@ hgroup, menu, nav, section, menu {
 #quote-holder {
   display: inline-block;
   vertical-align: top;
-  padding-top: 80px;
+  padding-top: 70px;
   position: relative;
 }
 
 #quote-holder .quote {
   font-size: 5.5rem;
   color: #fff;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: oblique;
   display: block;
 }
@@ -140,7 +140,7 @@ hgroup, menu, nav, section, menu {
  * -------------------------------------------------------------- */
 
 #footer-holder {
-  background: #FFBEBE;
+  background: #FAC1C1;
   padding: 20px 0;
   text-align: center;
   color: #fff;
