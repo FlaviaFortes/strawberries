@@ -93,8 +93,45 @@ hgroup, menu, nav, section, menu {
   border: 0;
 }
 
+
+#header figure {
+  float: left;
+  margin-left: 100px;
+  margin-top: 30px;
+  display: block;
+}
+
+#header figure img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #FAC1C1;
+}
+
+#quote-holder {
+  margin-top: 60px;
+  margin-left: 50px;
+  float: left;
+}
+
+#quote-holder .quote {
+  font-size: 5.5rem;
+  color: #fff;
+  font-weight: 400;
+  font-style: oblique;
+  float: left;
+}
+
+#quote-holder .signature {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: lighter;
+  font-style: oblique;
+  float: left;
+}
+
 /* =Container
- * -------------------------------------------------------------- */
+ * --------------------------------------------------------------
 
 
 /* =Footer
