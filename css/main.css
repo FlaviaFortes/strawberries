@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font: 1.4rem Verdana, Arial, Helvetica, sans-serif;
+  font: 1.4rem 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #555;
 }
 
@@ -95,10 +95,10 @@ hgroup, menu, nav, section, menu {
 
 
 #header figure {
-  float: left;
   margin-left: 100px;
   margin-top: 30px;
-  display: block;
+  display: inline-block;
+  margin-right: 45px;
 }
 
 #header figure img {
@@ -109,9 +109,10 @@ hgroup, menu, nav, section, menu {
 }
 
 #quote-holder {
-  margin-top: 60px;
-  margin-left: 50px;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 60px;
+  position: relative;
 }
 
 #quote-holder .quote {
@@ -119,7 +120,7 @@ hgroup, menu, nav, section, menu {
   color: #fff;
   font-weight: 400;
   font-style: oblique;
-  float: left;
+  display: block;
 }
 
 #quote-holder .signature {
@@ -127,7 +128,8 @@ hgroup, menu, nav, section, menu {
   color: #fff;
   font-weight: lighter;
   font-style: oblique;
-  float: left;
+  position: absolute;
+  right: 0px;
 }
 
 /* =Container
