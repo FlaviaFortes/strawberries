@@ -68,8 +68,12 @@ hgroup, menu, nav, section, menu {
 }
 
 #header {
-  height:200px;
-  background-color: #B49B91;
+  height:280px;
+  background-image:url('/images/header.jpg');
+  background-repeat:repeat;
+  border-bottom: 5px solid #924C4C;
+  border-top: 5px solid #EB8181;
+
 }
 
 #header h1 a {
@@ -80,6 +84,13 @@ hgroup, menu, nav, section, menu {
 
 #header h1 a:hover {
   text-decoration: none;
+}
+
+.hr {
+  color: #996F6F;
+  background-color: #996F6F;
+  height: 10px;
+  border: 0;
 }
 
 /* =Container
